@@ -29,6 +29,7 @@ export default function ajax(url,data={},type='GET') {
 
     promise.then(function (response) {
       //成功的话执行resolve
+      console.log(response.data)
       resolve(response.data)
     })
       .catch(function (error) {
